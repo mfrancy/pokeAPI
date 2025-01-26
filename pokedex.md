@@ -17,6 +17,3 @@ Este projeto é uma implementação de uma **Pokedex interativa** que consome da
 1. Clone este repositório.
 2. Abra o arquivo `index.html` em seu navegador.
 3. A página irá carregar uma lista de Pokémon com suas respectivas informações e imagens.
-
-## Exemplo:
-![Exemplo de Pokémon na Pokedex](./assets/images/pokemon-example.png)
