@@ -3,35 +3,51 @@
     box-sizing: border-box;
 }   
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 .content {
     background-color: #e2e6e4;
     padding: 1rem;
 }
 
 header {
-    background-color: rgba(0, 0, 0, 0.651);
+    background-color: #3761A8;
     display: flex;
     justify-content: center;
 }
 
-#name-pokemon {
-    font-size: 25px;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
 
 h1 {
     margin: 0;
     padding: 10 20;
-    color: #e2e6e4;
+    color: #FECA1B;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 50px;
 }
 
 .pokemons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -68,10 +84,15 @@ h1 {
 
 button {
     background-color: rgba(0, 0, 0, 0.418);
+    padding: 0.5rem;
     border-style: none;
     border-radius: 1rem;
-    width: 250px;
+    width: 200px;
     cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 /* button:hover {
@@ -83,6 +104,7 @@ button {
     margin: 0;
     list-style: none;
     text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .pokemon .detail .types .type {
@@ -101,4 +123,45 @@ border-radius: 1rem;
     border-style: none;
     height: 70px;
     align-self: flex-end;
+}
+
+.modal {
+    /* Posição modal na página */
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+
+    /* Tamanho do modal */
+    width: 60%;
+    height: 55%;
+
+    /* Estilização modal */
+    background-color: white;
+    border-radius: 0.5rem;
+    /* padding: 20px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.modal-header {
+    /* Tamanho header modal */
+    width: 100%;
+    height: 15%;
+
+    /* Estilização header modal */
+    background-color: #3761A8;
+}
+
+.modal-header h2 {
+    /* Posição título */
+    padding-top: 10px;
+    padding-left: 15px;
+
+    /* Estilização título */
+    color: #FECA1B;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
