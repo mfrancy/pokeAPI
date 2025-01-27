@@ -1,6 +1,8 @@
 const pokemonList = document.getElementById('pokemon-list')
 const numberPokemon = document.getElementById('number-pokemon')
 const lista = document.querySelector('ol')
+const openModalBtn = document.getElementById("openModalBtn")
+
 
 
 // const pokedex = []
@@ -118,5 +120,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         console.log(detalhesPokemon)
         lista.innerHTML += itemHtml
     }
-
 })
