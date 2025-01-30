@@ -35,8 +35,8 @@ function changeColor(type) {
      colorTypePokemon = '#2d8772'
 
   } else if (type === 'fire') {  
-    colorCardPokemon ='#f13636e3'
-    colorTypePokemon ='#a71616e3'
+    colorCardPokemon ='#a71616e3'
+    colorTypePokemon ='#f13636e3'
   } else if (type === 'water') {
     colorCardPokemon = '#0b57d0'
     colorTypePokemon = '#0b45a3'
@@ -54,9 +54,9 @@ function createHtml(detalhesPokemon) {
   const typePokemon = detalhesPokemon.types[1] ? `<li style="background-color: ${colorType}" class="type">${detalhesPokemon.types[1]?.type?.name}</li>` : ''
   // const colorPokemon = changeColor(detalhesPokemon.types[0].type.name)
 
-    return `<li id="pokemon-list" style="background-color: ${colorPokemon}";  class="pokemon">
+    return `<li id="pokemon-list" style="background-color: ${colorPokemon}";  class="pokemon animation animationBtn">
           <span id="number-pokemon" class="number">#00${detalhesPokemon.id}</span>
-          <button style="background-color: ${colorType}" class="name btnPokemon" data-pokemon="${detalhesPokemon.id}">
+          <button style="background-color: ${colorType}" class="animationBtn name btnPokemon" data-pokemon="${detalhesPokemon.id}">
             ${detalhesPokemon.name}
           </button>
           <div class="detail">

@@ -10,20 +10,31 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://kit.fontawesome.com/ccfa715042.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/ccfa715042.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Arquivo css -->
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Pokedex novo</title>
   </head>
   <header>
-    <div>
+    <div class="divImage">
+      <img
+        class="pokeball"
+        src="https://upload.wikimedia.org/wikipedia/commons/5/51/Pokebola-pokeball-png-0.png"
+        alt=""
+        srcset=""
+      />
+    </div>
+    <div class="divPokeball">
       <h1>POKEDEX</h1>
     </div>
   </header>
   <body>
     <section class="content">
       <ol id="allPokemons" class="pokemons">
-        <li id="pokemon-list"  class="pokemon">
+        <!-- <li id="pokemon-list" class="pokemon">
           <span id="number-pokemon" class="number">#001</span>
           <button id="openModalBtn">
             <span id="name-pokemon" class="name">Bulbasaur</span>
@@ -39,18 +50,28 @@
               srcset=""
             />
           </div>
-        </li>
+        </li> -->
       </ol>
     </section>
 
-<div id="pokemon-details" class="modal">
-<div class="modal-header">
-<h2>BULBASAUR</h2>
-<i class="fa-solid fa-xmark"></i>
-</div>
-
-</div>
-
+    <div id="pokemon-details" class="modal">
+      <div class="modal-header">
+        <div>
+          <h2>BULBASAUR</h2>
+        </div>
+        <div>
+          <i id="fechar-modal" class="fa-solid fa-xmark animationBtn"></i>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="imgModal">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="" srcset="">
+        </div>
+        <div>
+          <h6>detalhes</h6>
+        </div>
+      </div>
+    </div>
     <script src="assets/js/main.js"></script>
   </body>
 </html>
