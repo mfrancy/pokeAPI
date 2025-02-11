@@ -133,13 +133,14 @@ button {
 .modal {
   /* Posição modal na página */
   display: none;
-  position: absolute;
+  position: fixed;
   top: 20%;
-  left: 20%;
-
+  left: 30%;
   /* Tamanho do modal */
   width: 60%;
+  max-width: 800px;
   height: 55%;
+  max-height: 80vh;
 
   /* Estilização modal */
   background-color: white;
@@ -149,6 +150,7 @@ button {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 
+    overflow: hidden;
 }
 
 .modal-show {
@@ -190,16 +192,24 @@ button {
   flex: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
+  /* background-color: #61e1ca; */
+  padding: 1rem;
 }
 
 .imgModal {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
+  max-height: 100%;  
 }
 
 .imgModal img {
-  width: 100%;
+  width: 90%;
+  max-width: 300px;
+  height: auto;
+  max-height: 90%;
+  object-fit: contain;
 }
